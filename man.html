@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man Perfumes</title>
+    <link rel="stylesheet" href="t.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1 onclick="location.href='aboutus .html';" style="cursor: pointer;">AMEDY<br>Perfume</h1>
+        </div>
+        <div class="navbar-links">
+            <a href="t.html">Home</a>
+            <a href="man.html">Men</a>
+            <a href="woman.html">Women</a>
+            <input type="text" id="filterInput" placeholder="Search products..." oninput="filterProducts()" />
+        </div>
+    </nav>
+ <div class="product-container">
+    <img src="https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dwd03204d2/original/90_R721010-R100MLS_RNUL_20_DylanBluePourHommeEDT100ml--Versace-online-store_2_1.jpg?sw=1200&q=85&strip=true" alt="Luxury Perfume" class="product-image" alt="Luxury Perfume" class="product-image" />
+    <div class="product-description">
+        <h2>Man Luxury Perfume Collection</h2>
+        <p>
+            Elevate your presence with our Man Luxury Perfume Collection—where bold masculinity meets refined sophistication in every exquisite blend
+        </p>
+    </div>
+</div>
+    <div id="item-list">
+        <!-- Male perfumes will be loaded dynamically -->
+    </div>
+   
+    <div id="item-list">
+        <!-- Items will be loaded dynamically -->
+      
+    </div>
+    <div class="cbtn">
+<button id="p">🛒</button>
+
+</div>
+    <script src="js.js"></script>
+    <script>
+        // Load male perfumes when the page loads
+        const maleProducts = products.filter(product => product.gender === 'Male'||product.gender === 'Unisex');
+        loadItems(maleProducts);
+    </script>
+</body>
+</html>

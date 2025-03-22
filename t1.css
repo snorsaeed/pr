@@ -1,0 +1,207 @@
+body {
+  display: flex;           /* Enable Flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center;     /* Center content vertically */
+  height: 100vh;           /* Make the body take full viewport height */
+  font-family: Arial, sans-serif; 
+  text-align: center;
+}
+
+#backbtn1 {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  color: #333;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 10;
+}
+
+h1 {
+  text-align: center;
+  color: #380000;
+}
+
+.card {
+  width: 290px;
+  height: 500px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 20px 20px 60px #bebebe,
+   -20px -20px 60px #ffffff;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+#img {
+  width: 135px;
+  height: 230px;
+  object-fit: cover;
+}
+
+#summary {
+  font-size: 15px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #bea171;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card1 {
+  width: 290px;
+  height: 500px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 20px 20px 60px #bebebe,
+   -20px -20px 60px #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ✅ Header styling */
+h2 {
+  margin: 0;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* ✅ Input styling */
+input {
+  width: calc(100% - 20px);
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.alert {
+  width: 100%;
+  background: rgb(0, 255, 106);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  display: none;
+}
+
+#contactForm input {
+  width: 100%; /* Make inputs full width */
+  padding: 10px;
+  margin-bottom: 15px; /* Add space between inputs */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Prevent overflow */
+}
+
+#contactForm button {
+  width: 100%;
+  padding: 10px;
+  background-color: #bea171;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#contactForm button:hover {
+  background-color: #333;
+}
+
+/* ✅ Styling for the Recommended Products section */
+#recommended-products {
+  margin-top: 30px; /* Add some space between the card and recommended products */
+  text-align: center;
+  width: 100%;
+}
+
+#recommended-products h2 {
+  font-size: 22px;
+  color: #380000;
+  margin-bottom: 20px;
+}
+
+#recommended-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Ensure products can wrap to the next line if there are too many */
+}
+
+.item {
+  width: 220px; /* Adjust the width of each recommended item */
+  margin: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.item button {
+  background-color: #380000;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item button:hover {
+  background-color: #333;
+}
+
+

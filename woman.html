@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woman Perfumes</title>
+    <link rel="stylesheet" href="t.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1 onclick="location.href='aboutus .html';" style="cursor: pointer;">AMEDY<br>Perfume</h1>
+        </div>
+        <div class="navbar-links">
+            <a href="t.html">Home</a>
+            <a href="man.html">Men</a>
+            <a href="woman.html">Women</a>
+            <input type="text" id="filterInput" placeholder="Search products..." oninput="filterProducts()" />
+        </div>
+    </nav>
+
+
+
+    <div class="product-container">
+    <img src="https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_autoplus,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-l-eau-privee-eau-pour-la-nuit-spray-3-4fl-oz--packshot-default-116260-9564864282654.jpg" alt="Luxury Perfume" class="product-image" alt="Luxury Perfume" class="product-image" />
+    <div class="product-description">
+        <h2>Woman Luxury Perfume Collection</h2>
+        <p>
+            Embrace your inner icon with Fame for Woman—a luxurious fragrance that celebrates timeless elegance and captivating allure
+    </div>
+</div>
+    <div id="item-list">
+        <!-- Female perfumes will be loaded dynamically -->
+    </div>
+  
+    <div id="item-list">
+        <!-- Items will be loaded dynamically -->
+             
+    </div>
+    <div class="cbtn">
+<button id="p">🛒</button>
+
+</div>
+    <script src="js.js"></script>
+    <script>
+        // Load female perfumes when the page loads
+        const femaleProducts = products.filter(product => product.gender === 'Female'||product.gender === 'Unisex');
+        loadItems(femaleProducts);
+    </script>
+</body>
+</html>

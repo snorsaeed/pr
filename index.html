@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1 - Add to Cart</title>
+    <link rel="stylesheet" href="t.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1 onclick="location.href='aboutus .html';" style="cursor: pointer;">AMEDY<br>Perfume</h1>
+        </div>
+        <div class="navbar-links">
+            <a href="t.html">Home</a>
+            <a href="man.html">Men</a>
+            <a href="woman.html">Women</a>
+            <input type="text" id="filterInput" placeholder="Search products..." oninput="filterProducts()" />
+        </div>
+    </nav>
+
+
+
+    
+    <div class="product-container">
+        <img src="https://us.parfums-de-marly.com/cdn/shop/files/HALTANE_75ml_1.png?v=1741178003" alt="Luxury Perfume" class="product-image" alt="Luxury Perfume" class="product-image" />
+        <div class="product-description">
+            <h2>Luxury Perfume Collection</h2>
+            <p>
+                Discover the exquisite world of AMEDY Parfumes. Our luxury collection combines timeless elegance with modern sophistication, creating unforgettable scents that leave a lasting impression.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="social-cards">
+        <a href="https://www.instagram.com/snorsaeed/" target="_blank" class="social-card instagram">
+            <h1>Instagram</h1>
+            <p>@AMEDYParfumes</p>
+        </a>
+        
+        <a href="https://www.tiktok.com" target="_blank" class="social-card tiktok">
+            <h1>TikTok</h1>
+            <p>@AMEDYParfumes</p>
+        </a>
+        
+        <a href="https://www.snapchat.com" target="_blank" class="social-card snapchat">
+            <h1>Snapchat</h1>
+            <p>@AMEDYParfumes</p>
+        </a>
+    </div>
+
+ 
+
+    <div id="item-list">
+        <!-- Items will be loaded dynamically -->
+       
+    </div>
+    <div class="cbtn">
+<button id="p">🛒</button>
+
+</div>
+
+    <script src="js.js"></script>
+    <script>
+        
+        // Load items when the page loads
+        loadItems();
+    </script>
+   
+</body>
+</html>

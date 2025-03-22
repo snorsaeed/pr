@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages | Firebase</title>
+    <link rel="stylesheet" href="t1.css">
+
+    
+</head>
+
+<body>
+    <button class="back-btn" id="backbtn1">Back</button>
+    <div class="card1">
+    <div class="container">
+        <form action="" id="contactForm">
+            <h3>enter your information</h3>
+
+          
+                <input type="text" id="name" placeholder="Your name...." />
+      
+
+           
+                <input type="text" id="phone" placeholder="Your phone number....." />
+          
+
+            
+                <input id="city"  placeholder="Your City....."/>
+       
+            
+      
+                <input id="street"  placeholder="Your street....."/>
+         
+
+                <button type="submit">Submit</button>
+      
+        </form>
+    </div>
+</div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="firebase.js"></script>
+    <script>
+        document.getElementById("backbtn1").onclick=function(){
+  window.location.href = "t1.html";
+}
+    </script>
+</body>
+
+</html>

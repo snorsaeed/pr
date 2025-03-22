@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2 - Cart</title>
+    <link rel="stylesheet" href="t.css">
+</head>
+<body>
+
+    <button class="backbtn" id="backbtn">Back </button>
+
+    <h1>Your Cart</h1>
+    <ul id="cart-items"></ul>
+    <p id="total1">total</p>
+    
+    
+<div class="checkout">
+    
+    <button onclick="clearCart()">Clear Cart</button>
+    <button id="checkout1">checkout</button>
+</div>
+ 
+    
+
+    <script src="js.js"></script>
+    <script>
+    
+        
+ document.getElementById("backbtn").onclick=function(){
+    history.back();
+}
+document.getElementById("checkout1").onclick=function(){
+  window.location.href = "checkout.html";
+}
+
+    // Display cart items when the page loads
+    displayCartItems();
+        
+
+    </script>
+    
+</body>
+</html>
