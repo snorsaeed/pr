@@ -78,13 +78,13 @@ li img {
   right: 0.1px;
   z-index: 1400;
   border-radius: 10%;
-  background-color: #ddd;
+ 
   color: #72383d;
-  width: 40px;
-  height: 40px;
-  font-size: 12px;
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
   padding: 10px;
-  background: #bea171;
+  background: transparent;
 }
 
 /* Filter Input Styling */
